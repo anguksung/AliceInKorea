@@ -19,14 +19,8 @@
     
     <script type="text/javascript">
         var words = document.getElementsByClassName("word");
-        console.log(words.length);
-        var text = document.getElementById('main');
-        console.log(text.value);
-        text.value += 'dsf';
-        console.log(text.value);
         window.onload = function() {
             for (let element of words) {
-                console.log(element);
                 element.onclick = function() {
                     var text = document.getElementById('main');
                     
