@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div id="main"></div>
+    <div id="sidebar">
+        <p class="word">sdfa</p>
+        <p class="word">ahhh</p>
+        <p class="word">cnff</p>
+        <p class="word">rr</p>
+        <p class="word">jir</p>
+    </div>
+    
+    <script type="text/javascript">
+        var words = document.getElementsByClassName("word");
+        console.log(words.length);
+        var text = document.getElementById('main');
+        console.log(text.value);
+        text.value += 'dsf';
+        console.log(text.value);
+        window.onload = function() {
+            for (let element of words) {
+                console.log(element);
+                element.onclick = function() {
+                    var text = document.getElementById('main');
+                    
+                    text.innerHTML += element.innerHTML + '\n'
+                };
+            }
+        }
+    </script>
+</body>
+</html>

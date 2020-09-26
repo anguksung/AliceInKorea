@@ -1,0 +1,19 @@
+#main{
+    height:500px;
+    width:200px;
+    outline-color: steelblue;
+    outline-style: solid;
+    outline-width: 2px;
+    float: left;
+    overflow:auto;
+    border-radius: 5px;
+    padding: 50px;
+}
+#sidebar{
+    float: right;
+    height:500px;
+    width:200px;
+    background-color:lightgray;
+    overflow:auto;
+    padding: 50px;
+}
